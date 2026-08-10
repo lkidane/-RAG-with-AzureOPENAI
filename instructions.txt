@@ -21,8 +21,3 @@
 
   remember dont add files in the repo directly initially, it will generate errors
 
-
-
-  git push --set-upstream origin main
-
-This is all we need to change, update and resolve errors of the repo
