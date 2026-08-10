@@ -21,3 +21,31 @@
 
   remember dont add files in the repo directly initially, it will generate errors
 
+
+
+  git push --set-upstream origin main
+
+This is all we need to change, update and resolve errors of the repo
+
+
+
+Create a pull Requests  If you have GitHub CLI installed:
+gh pr create \
+  --base main \
+  --head feature-rag-improvements \
+  --title "Add RAG improvements" \
+  --body "Updated RAG retrieval and prompts"
+
+
+changes are in the second branch (for example, new-rag) and you want to bring them into main,
+
+git checkout main
+git merge new-rag
+git push origin main
+
+if there is merge conflict
+git add .
+git commit
+git push origin main
+or 
+git push origin main --force
