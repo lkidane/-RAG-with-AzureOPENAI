@@ -1,0 +1,9 @@
+ git checkout --orphan clean-main
+ git add .
+ git commit -m "Initial clean commit"
+ git branch -D main
+ git branch -m main
+  git push origin main --force
+
+
+  # solution to resolve key issue in commits. 
