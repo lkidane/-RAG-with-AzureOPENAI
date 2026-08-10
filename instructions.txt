@@ -7,3 +7,17 @@
 
 
   # solution to resolve key issue in commits. 
+
+
+  ######################## To change git repo location ##########################################
+  check the repo repository
+  git remote -v
+
+  change to new repo
+  git remote set-url origin https://github.com/new-user/new-repo.git
+
+  push to new repo
+  git push -u origin main
+
+  remember dont add files in the repo directly initially, it will generate errors
+
